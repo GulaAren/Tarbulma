@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<section class="hero is-primary">
+  <header class="hero-body is-primary">
+    <div class="container">
+      <h1 class="title">
+        {{ page.title }}
+      </h1>
+      <h2 class="subtitle">
+        <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
+      </h2>
+    </div>
+  </header>
+</section>
+
+<section class="section bg-grad">
+  <div class="container">
+  <div class="columns">
+    <div class="content content-pad column is-three-quarters  has-background-white-ter">
+      {{ content }}
+    </div>
+
+    {% if site.related_posts != empty %}
+    <div class="column is-light sidebar-pad">
+      <h3 class="title has-text-white-bis">Related Posts</h3>
+      <ul class="">
+        {% for post in site.related_posts limit:7 %}
+          <li>
+            <a href="{{ site.baseurl }}{{ post.url }}">
+              {{ post.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+  </div>
+</section>

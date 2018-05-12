@@ -1,0 +1,29 @@
+title:               Tarbulma
+tagline:             Jekyll theme using bulma
+url:                 ""
+paginate:            7
+paginate_path:       "/blog/:num/"
+baseurl:             ""
+permalink:           "/blog/:title/"
+excerpt_separator:   <!--more-->
+highlighter:         rouge
+kramdown:
+   syntax_highlighter: rouge
+
+sass:
+  style:             compressed
+
+# About/contact
+author:
+  name:              YourName
+  url:               Your URL
+  email:             yourmail@example.com
+
+github:
+  repo:              https://github.com/Terbulma
+
+#analytics_id:        ""
+
+# Gems
+plugins:
+  - jekyll-paginate
