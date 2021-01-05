@@ -5,8 +5,7 @@
 ```bash
 $ git clone
 $ cd
-$ gem install jekyll
-$ gem install jekyll-paginate
+$ gem install jekyll jekyll-paginate
 $ jekyll serve
 ```
 
@@ -19,7 +18,7 @@ $ rm README.md
 
 ### Example 
 
- - [tesmanis.github.io](https://tesmanis.github.io)
+ - [GulaAren.github.io](https://gulaaren.github.io)
 
 ## Screenshots
 
